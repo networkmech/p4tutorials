@@ -1,0 +1,16 @@
+{
+  "target": "bmv2",
+  "p4info": "build/mac_learner.p4.p4info.txt",
+  "bmv2_json": "build/mac_learner.json",
+  "table_entries": [ 
+    {
+      "table": "MyIngress.firewall_table",
+      "match": {
+        "hdr.ipv4.dstAddr": ["20.0.1.0", 24]
+      },
+      "action_name": "MyIngress.drop",
+      "action_params": {
+      }
+    }
+  ]
+}
